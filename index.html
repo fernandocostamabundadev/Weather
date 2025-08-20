@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Consulta do tempo em tempo real com API OpenWeatherMap">
+    <link rel="icon" type="image/png"
+        href="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png">
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>🌤️ Consulta o Tempo</h1>
+        <input type="text" id="cityInput" placeholder="Escreve uma cidade..." />
+        <button id="searchBtn">Pesquisar</button>
+
+        <div id="weatherResult" class="weather-card hidden">
+            <h2 id="cityName"></h2>
+            <p><strong>Temperatura:</strong> <span id="temperature"></span>°C</p>
+            <p><strong>Condições:</strong> <span id="condition"></span></p>
+            <p><strong>Humidade:</strong> <span id="humidity"></span>%</p>
+        </div>
+    </div>
+
+    <small>🔁 Dados atualizados a cada pesquisa</small>
+    <button id="toggleTheme">🌓 Modo Escuro</button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
